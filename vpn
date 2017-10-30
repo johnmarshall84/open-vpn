@@ -1,0 +1,15 @@
+
+    openvpn-build/generic/build.vars
+    openvpn-build/windows-nsis/build-complete.vars
+
+Build (unsigned):
+
+    cd openvpn-build/windows-nsis
+    ./build-complete
+
+Build (signed):
+
+    cd openvpn-build/windows-nsis
+    ./build-complete --sign --sign-pkcs12=<pkcs12-file>\
+    --sign-pkcs12-pass=<pkcs12-file-password> \
+    --sign-timestamp="<timestamp-url>"
